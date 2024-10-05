@@ -1,0 +1,39 @@
+/* Кольорова палітра */
+:root {
+    --primary-color: #841e62; /* Основний колір */
+    --secondary-color: #beed76; /* Вторинний колір */
+    --accent-color-1: #33ff57; /* Додатковий колір 1 */
+    --accent-color-2: #D9D8D7; /* Додатковий колір 2 */
+    --accent-color-3: #0D0D0D; /* Додатковий колір 3 */
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    text-align: center; /* Центруємо текст */
+}
+
+h1 {
+    color: var(--accent-color-1);
+}
+
+p {
+    color: var(--accent-color-2);
+}
+
+a {
+    color: var(--accent-color-3);
+    text-decoration: none; /* Без підкреслення для посилань */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0; /* Відступи для контейнера зображень */
+}
+
+img {
+    margin: 10px;
+}

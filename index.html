@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/evox.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            font-family: "Rubik Doodle Shadow", system-ui;
+            font-weight: 2000;
+            font-style: normal;
+            text-shadow: 1px 1px 2px #00000055;
+        }
+
+        .css-animation {
+            width: 300px;
+            transition: transform 0.5s;
+        }
+
+        .css-animation:hover {
+            transform: scale(1.1);
+        }
+
+        .animation-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        /* Стилізація футера */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-link {
+            color: green; /* Зелений колір іконок */
+            font-size: 24px; /* Розмір іконок */
+            transition: color 0.3s;
+        }
+
+        .social-link:hover {
+            color: #0f0; /* Яскравіший зелений при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <h1>Лабораторна робота №5</h1>
+    <h2>Українець Вадим</h2>
+    <h3>Зображення різних форматів і анімації</h3>
+
+    <div class="animation-container">
+        <img src="img/eclipse.jpg" alt="Екліпс JPG" class="css-animation">
+        <img src="img/eclipse.png" alt="Екліпс PNG" class="css-animation">
+        <img src="img/eclipse.svg" alt="Екліпс SVG" class="css-animation">
+        <img src="img/porsche.svg" alt="Porsche SVG" width="300">
+    </div>
+
+    <h4>Анімації з JavaScript</h4>
+    <div class="animation-container">
+        <img id="js-animation1" src="img/скайлайн.png" alt="Анімація 1" width="300">
+        <img id="js-animation2" src="img/fura.png" alt="Анімація 2" width="300">
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/PaulWalker/?locale=en_GB" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/vindiesel/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/tyrese" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" fill="lightblue" stroke="darkblue" stroke-width="4"/>
+    </svg>
+</body>
+</html>
